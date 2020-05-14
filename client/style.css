@@ -1,0 +1,71 @@
+body,
+html {
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #CCD3E6 0%, #7C8EBF 100%);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "wrapper"
+}
+
+wrapper {
+  grid-area: wrapper;
+  margin: 0% 10px;
+  border: 2px solid green;
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: #ffffff;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    "logo logo logo"
+    "nav nav nav"
+    "carousel carousel carousel"
+    "products products products"
+    "ads ads ads"
+    "footer footer footer"
+}
+
+.wrapper-item {
+  border: 1px solid blueviolet;
+  background: blanchedalmond;
+}
+
+logo {
+  grid-area: logo;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+nav {
+  grid-area: nav;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+carousel {
+  grid-area: carousel;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1%;
+}
+
+products {
+  grid-area: products;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+ads {
+  grid-area: ads;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-bottom: 1%;
+}
+
+footer {
+  grid-area: footer;
+}
