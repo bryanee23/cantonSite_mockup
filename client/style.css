@@ -6,19 +6,23 @@ html {
 body {
   margin: auto;
   background: linear-gradient(to bottom, #CCD3E6 0%, #7C8EBF 100%);
+  background:  #CCD3E6;
   display: grid;
   grid-template-columns: 1fr;
+  grid-auto-rows: auto;
   grid-template-areas:
     "wrapper"
 }
 
 wrapper {
   grid-area: wrapper;
-  margin: 0% 10px auto 10px;
+  min-width: 1000px;
+  margin: 0% auto auto auto;
   border: 2px solid green;
   background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  /* grid-auto-rows: auto; */
   grid-template-areas:
   "logo logo logo"
   "nav nav nav"
@@ -63,9 +67,69 @@ nav {
   grid-area: nav;
   margin-left: 2%;
   margin-right: 2%;
-  color: #ffffff;
   background-color: #506585;
   border-bottom: 5px solid #BEC6D2;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 50px;
+  grid-template-areas:
+  "nav1 nav2 nav3 nav4 nav5";
+
+}
+
+nav > .nav1 {
+  grid-area: nav1;
+}
+nav > .nav2 {
+  grid-area: nav2;
+}
+nav > .nav3 {
+  grid-area: nav3;
+}
+nav > .nav4 {
+  grid-area: nav4;
+}
+nav > .nav5 {
+  grid-area: nav5;
+}
+
+.navLinks {
+  font-size: 10px;
+  color: rgb(202, 216, 235);
+  text-decoration: none;
+  /* margin: 15%; */
+}
+
+.navLinks:hover {
+  color: #ffffff;
+  transition: color .5s;
+}
+
+a {
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+
+  display: inline-block;
+  padding: 15px 20px;
+  position: relative;
+}
+a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 carousel {
