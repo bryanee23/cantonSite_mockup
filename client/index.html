@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+
+  <title>eva by design</title>
+
+</head>
+
+<body>
+  <wrapper>
+
+    <logo class="wrapper-item"> logo </logo>
+    <nav class="wrapper-item"> nav </nav>
+    <carousel class="wrapper-item"> carousel </carousel>
+    <products class="wrapper-item"> products </products>
+    <ads class="wrapper-item"> ads </ads>
+    <footer class="wrapper-item"> footer </footer>
+
+
+  </wrapper>
+</body>
+
+
+<style>
+  body,
+  html {
+    height: 100vh;
+  }
+
+  body {
+    margin: 0;
+    background: linear-gradient(to bottom, #CCD3E6 0%, #7C8EBF 100%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "wrapper"
+  }
+
+  wrapper {
+    grid-area: wrapper;
+    margin: 0% 10px;
+    border: 2px solid green;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #ffffff;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "logo logo logo"
+      "nav nav nav"
+      "carousel carousel carousel"
+      "products products products"
+      "ads ads ads"
+      "footer footer footer"
+  }
+
+  .wrapper-item {
+    border: 1px solid blueviolet;
+    background: blanchedalmond;
+  }
+
+  logo {
+    grid-area: logo;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  nav {
+    grid-area: nav;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+
+  carousel {
+    grid-area: carousel;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+  }
+
+  products {
+    grid-area: products;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  ads {
+    grid-area: ads;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-bottom: 1%;
+  }
+
+  footer {
+    grid-area: footer;
+  }
+</style>
+
+</html>
+<!--
+<body>
+  <div class="grid-container">
+    <div class="grid-item logo">logo</div>
+    <div class="grid-item nav">nav</div>
+    <div class="grid-item carousel">carousel</div>
+
+    <div class="grid-item products">
+      products-text
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+        <div>adsk</div>
+        <div>adsk</div>
+        <div>adsk</div>
+        <div>adsk</div>
+        <div>adsk</div>
+    </div>
+<div class="grid-item products-top-left">products-top-left</div>
+    <div class="grid-item products-top-mid">products-top-mid</div>
+    <div class="grid-item products-top-right">products-top-right</div>
+    <div class="grid-item products-mid-left">products-mid-left</div>
+    <div class="grid-item products-mid-mid">products-mid-mid</div>
+    <div class="grid-item products-mid-right">products-mid-right</div>
+    <div class="grid-item products-bottom-left">products-bottom-left</div>
+    <div class="grid-item products-bottom-mid">products-bottom-mid</div>
+    <div class="grid-item products-bottom-right">products-bottom-right</div>
+
+
+    <div class="grid-item ads">ads-left
+      <div>adsk</div>
+      <div>adsk</div>
+      <div>adsk</div>
+    </div>
+    <div class="grid-item featured">featured</div>
+
+    <div class="grid-item footer"> footer</div>
+
+  </div>
+  <div class="container">ff</div>
+</body>
+  -->
