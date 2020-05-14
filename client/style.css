@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Cantata+One);
+
 body,
 html {
   height: 100vh;
@@ -64,14 +66,15 @@ logo > .text {
 }
 
 nav {
+
   grid-area: nav;
   margin-left: 2%;
   margin-right: 2%;
   background-color: #506585;
   border-bottom: 5px solid #BEC6D2;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 50px;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr auto .5fr;
+  grid-template-rows: 20px;
   grid-template-areas:
   "nav1 nav2 nav3 nav4 nav5";
 
@@ -79,24 +82,32 @@ nav {
 
 nav > .nav1 {
   grid-area: nav1;
+  justify-self: center;
 }
 nav > .nav2 {
   grid-area: nav2;
+  justify-self: center;
 }
 nav > .nav3 {
   grid-area: nav3;
+  justify-self: center;
 }
 nav > .nav4 {
   grid-area: nav4;
+  justify-self: center;
 }
 nav > .nav5 {
   grid-area: nav5;
+  justify-self: center;
 }
 
 .navLinks {
-  font-size: 10px;
-  color: rgb(202, 216, 235);
+  justify-self: center;
+  font-family: "Trebuchet MS", sans-serif;;
+  font-size: 14px;
+  color:  rgb(227, 232, 238);
   text-decoration: none;
+  align-self: start;
   /* margin: 15%; */
 }
 
@@ -105,7 +116,7 @@ nav > .nav5 {
   transition: color .5s;
 }
 
-a {
+/* a {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
@@ -130,7 +141,7 @@ a:after {
 a:hover:after {
   width: 100%;
   left: 0;
-}
+} */
 
 carousel {
   grid-area: carousel;
