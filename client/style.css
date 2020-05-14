@@ -24,14 +24,13 @@ wrapper {
   background-color: #ffffff;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-auto-rows: auto; */
   grid-template-areas:
-  "logo logo logo"
-  "nav nav nav"
-  "carousel carousel carousel"
-  "products products products"
-  "ads ads ads"
-  "footer footer footer"
+    "logo logo logo"
+    "nav nav nav"
+    "carousel carousel carousel"
+    "products products products"
+    "ads ads ads"
+    "footer footer footer"
 }
 
 .wrapper-item {
@@ -63,7 +62,8 @@ logo > .image {
 
 logo > .text {
   grid-area: texts;
-  background-color: rgb(75, 218, 123);
+  justify-self: center;
+  font-family: "Trebuchet MS", sans-serif;;
 }
 
 nav {
@@ -121,33 +121,6 @@ nav > .nav5 {
   transition: color .5s, text .5s;
   text-decoration:underline;
 }
-
-/* a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 0.15em;
-
-  display: inline-block;
-  padding: 15px 20px;
-  position: relative;
-}
-a:after {
-  background: none repeat scroll 0 0 transparent;
-  bottom: 0;
-  content: "";
-  display: block;
-  height: 2px;
-  left: 50%;
-  position: absolute;
-  background: #fff;
-  transition: width 0.3s ease 0s, left 0.3s ease 0s;
-  width: 0;
-}
-a:hover:after {
-  width: 100%;
-  left: 0;
-} */
 
 carousel {
   grid-area: carousel;
