@@ -28,30 +28,33 @@ wrapper {
   "footer footer footer"
 }
 
-.wrapper-items {
-  border: 10px solid blueviolet;
+.wrapper-item {
+  border: 2px solid blueviolet;
   background: blanchedalmond;
+}
+
+.wrapper{
+  margin-bottom: 5px;
 }
 
 logo {
   grid-area: logo;
   margin-left: 2%;
   margin-right: 2%;
-
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 100px;
   grid-template-areas:
-  "images images images texts"
+  "images images images texts";
+  border: 1px solid black;
 }
 
 logo > .image {
   grid-area: images;
   background-color: rgb(75, 75, 218);
-
 }
 
-wrapper-item text{
+logo > .text {
   grid-area: texts;
   background-color: rgb(75, 218, 123);
 }
@@ -60,6 +63,9 @@ nav {
   grid-area: nav;
   margin-left: 2%;
   margin-right: 2%;
+  color: #ffffff;
+  background-color: #506585;
+  border-bottom: 5px solid #BEC6D2;
 }
 
 carousel {
