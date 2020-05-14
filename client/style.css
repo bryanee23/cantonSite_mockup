@@ -64,7 +64,10 @@ nav {
   grid-area: nav;
   margin-left: 2%;
   margin-right: 2%;
+  background-color: black;
 }
+
+
 
 carousel {
   grid-area: carousel;
