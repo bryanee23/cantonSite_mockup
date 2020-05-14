@@ -16,21 +16,20 @@ wrapper {
   grid-area: wrapper;
   margin: 0% 10px auto 10px;
   border: 2px solid green;
-  display: grid;
-  grid-template-columns: 1fr;
   background-color: #ffffff;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "logo logo logo"
-    "nav nav nav"
-    "carousel carousel carousel"
-    "products products products"
-    "ads ads ads"
-    "footer footer footer"
+  "logo logo logo"
+  "nav nav nav"
+  "carousel carousel carousel"
+  "products products products"
+  "ads ads ads"
+  "footer footer footer"
 }
 
-.wrapper-item {
-  border: 1px solid blueviolet;
+.wrapper-items {
+  border: 10px solid blueviolet;
   background: blanchedalmond;
 }
 
@@ -38,6 +37,23 @@ logo {
   grid-area: logo;
   margin-left: 2%;
   margin-right: 2%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100px;
+  grid-template-areas:
+  "images images images texts"
+}
+
+logo > .image {
+  grid-area: images;
+  background-color: rgb(75, 75, 218);
+
+}
+
+wrapper-item text{
+  grid-area: texts;
+  background-color: rgb(75, 218, 123);
 }
 
 nav {
@@ -68,4 +84,18 @@ ads {
 
 footer {
   grid-area: footer;
+}
+
+.top {
+  background-color: #ccc;
+  padding: 1em
+}
+
+.top h1 {
+  color: #ff0;
+}
+
+.top div {
+  color: red;
+  font-weight: bold;
 }
