@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  margin: 0;
+  margin: auto;
   background: linear-gradient(to bottom, #CCD3E6 0%, #7C8EBF 100%);
   display: grid;
   grid-template-columns: 1fr;
@@ -14,7 +14,7 @@ body {
 
 wrapper {
   grid-area: wrapper;
-  margin: 0% 10px;
+  margin: 0% 10px auto 10px;
   border: 2px solid green;
   display: grid;
   grid-template-columns: 1fr;
