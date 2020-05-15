@@ -1,108 +1,78 @@
-body,
-html {
-  height: 100vh;
+* {box-sizing: border-box}
+.mySlides {
+display: block;
 }
+img {vertical-align: middle;}
 
-body {
+
+.slideshow-container {
+  max-width: auto;
+  position: relative;
   margin: auto;
-  background: linear-gradient(to bottom, #CCD3E6 0%, #7C8EBF 100%);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "wrapper"
 }
 
-wrapper {
-  grid-area: wrapper;
-  margin: 0% 10px auto 10px;
-  border: 2px solid green;
-  background-color: #ffffff;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-  "logo logo logo"
-  "nav nav nav"
-  "carousel carousel carousel"
-  "products products products"
-  "ads ads ads"
-  "footer footer footer"
-}
-
-.wrapper-items {
-  border: 10px solid blueviolet;
-  background: blanchedalmond;
-}
-
-
-/*
-https://css-tricks.com/almanac/selectors/c/child/
-https://css-tricks.com/the-sass-ampersand/ */
-logo {
-  grid-area: logo;
-  margin-left: 2%;
-  margin-right: 2%;
-
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 100px;
-  grid-template-areas:
-  "images images images texts"
-}
-
-logo > .image {
-  grid-area: images;
-  background-color: rgb(75, 75, 218);
-
-}
-
-wrapper-item text{
-  grid-area: texts;
-  background-color: rgb(75, 218, 123);
-}
-
-nav {
-  grid-area: nav;
-  margin-left: 2%;
-  margin-right: 2%;
-  background-color: black;
-}
-
-
-
-carousel {
-  grid-area: carousel;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-bottom: 1%;
-}
-
-products {
-  grid-area: products;
-  margin-left: 4%;
-  margin-right: 4%;
-}
-
-ads {
-  grid-area: ads;
-  margin-left: 4%;
-  margin-right: 4%;
-  margin-bottom: 1%;
-}
-
-footer {
-  grid-area: footer;
-}
-
-.top {
-  background-color: #ccc;
-  padding: 1em
-}
-
-.top h1 {
-  color: #ff0;
-}
-
-.top div {
-  color: red;
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
   font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255, 253, 253, 0.445);
+  cursor: pointer;
+}
+
+.dot {
+  /* position: absolute; */
+  top: 40%;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
