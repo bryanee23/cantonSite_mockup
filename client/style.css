@@ -134,7 +134,7 @@ carousel {
 
 * {box-sizing: border-box}
 .mySlides {
-display: block;
+display: none;
 }
 img {vertical-align: middle;}
 
