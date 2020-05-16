@@ -388,6 +388,7 @@ products > .right{
 .modalImg{
   grid-area: modalImg;
   padding-bottom: 10px;
+  padding-right: 10px;
 }
 .closeBtn{
   cursor: pointer;
