@@ -141,6 +141,7 @@ carousel {
 
 * {box-sizing: border-box}
 .mySlides {display: none;}
+
 .carouselImg {vertical-align: middle;}
 
 .slideshow-container {
@@ -344,7 +345,7 @@ products > .right{
 
 
 .modal-container{
-  display: block;
+  display: none;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -358,24 +359,24 @@ products > .right{
 .modal-content{
   background-color: #fff;
   margin: 20% 13%;
-  /* width: auto;
-  height: auto; */
-  /* padding: 40px; */
   box-shadow: inset 0 0 1em -0.3em #545454, 2px 2px 8px #545454;
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr;
   grid-template-rows: 0.5fr 0.5fr 4fr;
   grid-template-areas:
     "closeBtn closeBtn closeBtn closeBtn"
-    "modal-title modal-title modal-title modal-title "
-    "modalPrev img item-text modalNext";
+    "modalPrev modal-title modal-title modalNext "
+    "img modalImg item-text item-text";
 }
 
 .item-text{
   grid-area: item-text;
   font-size: 100%;
   padding-bottom: 16px;
+  padding-right: 40px;
+  user-select: none;
 }
+
 .modal-title{
   grid-area: modal-title;
   font-size: 50px;
@@ -385,30 +386,28 @@ products > .right{
 }
 
 .modalImg{
+  grid-area: modalImg;
   padding-bottom: 10px;
 }
 .closeBtn{
+  cursor: pointer;
+  user-select: none;
   grid-area: closeBtn;
   float: left;
   font-size: 40px;
-  padding-left: 20px;
+  padding-left: 25px;
+  padding-top: 2px;
 
 }
 
 .modalPrev , .modalNext {
-  /* grid-area: modalPrev; */
   cursor: pointer;
-  /* width: auto; */
-  /* padding: 5px; */
   color: black;
   font-weight: bold;
-  font-size: 50px;
+  font-size: 60px;
   transition: 0.6s ease;
-  /* border-radius: 0 3px 3px 0; */
   user-select: none;
   text-align: center;
-  /* align-content: center; */
-  /* vertical-align: middle; */
 }
 
 /* Position the "next button" to the right */
@@ -429,18 +428,4 @@ ads {
 
 footer {
   grid-area: footer;
-}
-
-.top {
-  background-color: #ccc;
-  padding: 1em
-}
-
-.top h1 {
-  color: #ff0;
-}
-
-.top div {
-  color: red;
-  font-weight: bold;
 }

@@ -24,3 +24,33 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
+
+var modalIndex = 1;
+showModal(modalIndex);
+
+function plusModal(n) {
+  showModal(modalIndex += n);
+}
+
+
+function showModal(n) {
+
+  var i;
+  var slides = document.getElementsByClassName("modal-content");
+  if (n > slides.length) { modalIndex = 1 }
+  if (n < 1) { modalIndex = slides.length }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slides[modalIndex - 1].style.display = "grid";
+}
+
+function modalStart(){
+  var modalViewer = document.getElementsByClassName("modal-container");
+  // console.log(modalViewer[0].style.display)
+  modalViewer[0].style.display = "block"
+}
+function modalClose(){
+  var modalViewer = document.getElementsByClassName("modal-container");
+  modalViewer[0].style.display = "none"
+}
