@@ -5,8 +5,11 @@ html {
   height: 100vh;
 }
 
-.font {
+.typeface {
   font-family: "Trebuchet MS", sans-serif;
+}
+.main-typeface {
+  font-family: 'Cantata One', serif;
 }
 
 body {
@@ -236,9 +239,9 @@ products {
 
 .tile {
   justify-self: center;
-  /* align-self: center; */
   border: 3px solid #506585;
-  /* width: 250px; */
+  box-shadow: 5px 3px 10px #506585;
+  background: rgb(243, 240, 240);
   height: 270px;
   text-align: center;
   display: grid;
@@ -255,20 +258,28 @@ products {
   grid-area: button;
 }
 
-.headline{
+.headline {
   grid-area: headline;
-  margin: 15px auto 15px;
+  margin: 20px auto -22px;
   justify-self: center;
   align-self: center;
-  font-family: 'Cantata One', serif;
   font-size: 27px;
   font-style: italic;
-  text-shadow: 4px 0 22px #506585 ;
+  text-shadow: 4px 0 22px #506585;
+  text-align: center;
 }
+
+hr {
+  border: none;
+  border-top: 4px dashed #506585;
+  width: 880px;
+  /* box-shadow: 0px 0 8px #506585; */
+}
+
 
 .productImg{
   grid-area: productImg;
-  width: 96%;
+  width: 220px;
   height: 183px;
   border-radius: 51px;
   padding: 9px;
@@ -276,10 +287,16 @@ products {
 
 .title{
   grid-area: title;
+  font-size: 21px;
+  position: relative;
+  top: 9px;
 }
 
 .details{
   grid-area: details;
+  font-size: 12px;
+  position: relative;
+  top: 14px;
 }
 
 /* .left .tile{
