@@ -79,58 +79,92 @@ logo > .text {
   margin-top: 9px;
 }
 
+
 nav {
   grid-area: nav;
   margin-left: 2%;
   margin-right: 2%;
   background-color: #506585;
-  border-bottom: 5px solid #BEC6D2;
+  border-bottom: 3px solid #BEC6D2;
   display: grid;
-  grid-template-columns: 1fr 0.6fr 1.1fr 1fr auto -0.5fr;
-  grid-template-rows: 25px;
-  grid-template-areas:
-  "nav1 nav2 nav3 nav4 nav5";
+  z-index: 1;
+  justify-content: center;
 }
+/* nav text arrow */
+.arrow{
+  font-size: 70%;
+  }
 
-nav > .nav1 {
-  grid-area: nav1;
-  justify-self: center;
-  align-self: center;
-}
-nav > .nav2 {
-  grid-area: nav2;
-  justify-self: center;
-  align-self: center;
-}
-nav > .nav3 {
-  grid-area: nav3;
-  justify-self: center;
-  align-self: center;
-}
-nav > .nav4 {
-  grid-area: nav4;
-  justify-self: center;
-  align-self: center;
-}
-nav > .nav5 {
-  grid-area: nav5;
-  justify-self: center;
-  align-self: center;
-}
-
-.navLinks {
-  justify-self: center;
-  font-family: "Trebuchet MS", sans-serif;;
-  font-size: 14px;
-  color:  rgb(227, 232, 238);
+a {
   text-decoration: none;
-
+}
+/* entire nav bar list */
+ul {
+  background: #506585;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+}
+/* text header */
+/* all list element attribute */
+li a {
+  color: rgb(248, 242, 242);
+  font-size: 18px;
 }
 
-.navLinks:hover {
-  color: #ffffff;
-  transition: color .2s, text .5s;
-  text-decoration:underline;
+li {
+  background: #506585;
+  display: block;
+  float: left;
+  padding: 5px;
+  position: relative;
+  text-decoration: none;
+  transition-duration: 0.5s;
+}
+/* list header */
+.navTitle {
+  margin-left: 60px;
+}
+/* hover over header text  */
+.navTitle:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+/* dropdown list container */
+ul li ul {
+	visibility: hidden;
+  opacity: 0;
+  padding: 0px;
+	position: absolute;
+  width: 220px;
+  display: none;
+  z-index: 1;
+}
+/* shorten background for weely specials */
+.shortTxtNav{
+  width: 125px;
+}
+/* dropdown text */
+ul li ul li a {
+  font-size: 15px;
+}
+ul li ul li:hover {
+  background: #c3cedf;
+}
+
+ul li:hover > ul,
+ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+ul li ul li {
+	clear: both;
+  width: 100%;
 }
 
 carousel {
@@ -142,7 +176,11 @@ carousel {
 * {box-sizing: border-box}
 .mySlides {display: none;}
 
-.carouselImg {vertical-align: middle;}
+.carouselImg {
+  vertical-align: middle;
+  height: 300px;
+  width: 100%;
+}
 
 .slideshow-container {
   max-width: auto;
@@ -356,10 +394,21 @@ products > .right{
   overflow: auto;
 }
 
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
 .modal-content{
   background-color: #fff;
-  margin: 20% 13%;
+  margin: 10% 13%;
   box-shadow: inset 0 0 1em -0.3em #545454, 2px 2px 8px #545454;
+
   display: grid;
   grid-template-columns: 1fr 1fr 2fr 1fr;
   grid-template-rows: 0.5fr 0.5fr 4fr;
@@ -371,10 +420,9 @@ products > .right{
 
 .item-text{
   grid-area: item-text;
-  font-size: 100%;
+  font-size: 120%;
   padding-bottom: 16px;
-  padding-right: 40px;
-  user-select: none;
+  padding-right: 30%;
 }
 
 .modal-title{
@@ -382,7 +430,9 @@ products > .right{
   font-size: 50px;
   text-decoration: underline;
   text-align: center;
-  margin: -45px;
+  margin: 0px -46px -46px -46px;
+  position: relative;
+  top: -45px;
 }
 
 .modalImg{
@@ -398,7 +448,6 @@ products > .right{
   font-size: 40px;
   padding-left: 25px;
   padding-top: 2px;
-
 }
 
 .modalPrev , .modalNext {
@@ -414,10 +463,12 @@ products > .right{
 /* Position the "next button" to the right */
 .modalNext {
   grid-area: modalNext;
+  user-select: none;
 }
 
 .modalPrev:hover, .modalNext:hover {
   cursor: pointer;
+  background-color: #ddd6d6;
 }
 
 ads {
