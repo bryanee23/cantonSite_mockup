@@ -89,6 +89,7 @@ nav {
   display: grid;
   z-index: 1;
   justify-content: center;
+  
 }
 /* nav text arrow */
 .arrow{
