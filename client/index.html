@@ -12,6 +12,8 @@
 <body>
   <wrapper>
 
+    <!------logo------>
+    <!------logo------>
     <logo class="wrapper">
       <div class="image"></div>
       <div class="text">
@@ -23,479 +25,461 @@
           <strong>Email:</strong>
           <a href="mailto:Corporate@cantonfoodco.com">Corporate@cantonfoodco.com</a>
         </div>
-
       </div>
     </logo>
-    <!DOCTYPE html>
-    <html>
 
-    <head>
-      <meta charset="utf-8">
-      <title>JS Bin</title>
-    </head>
+    <!------nav------>
+    <!------nav------>
+    <nav class=" navmain-typeface" role="navigation">
+      <ul class="navList">
+        <li class="navTitle"><a href="#">Home</a></li>
+        <li class="navTitle "><a href="#">Specials <span class="arrow">&#10148; </span></a>
+          <ul class=" shortTxtNav">
+            <li><a href="#">Weekly Ad</a></li>
+            <li><a href="#">New Items</a></li>
+          </ul>
+        </li>
+        <li class="navTitle"><a href="#">Products <span class="arrow">&#10148; </span></a>
+          <ul>
+            <li><a href="#">Beer</a></li>
+            <li><a href="#">Dairy</a></li>
+            <li><a href="#">Disposable Containers</a></li>
+            <li><a href="#">Ethnic Food</a></li>
+            <li><a href="#">Frozen Food</a></li>
+            <li><a href="#">Grocery</a></li>
+            <li><a href="#">Janitorial Supplies</a></li>
+            <li><a href="#">Meat and Poultry</a></li>
+            <li><a href="#">Produce and Fruit</a></li>
+            <li><a href="#">Seafood</a></li>
+            <li><a href="#">Softdrinks</a></li>
+          </ul>
+        </li>
+        <li class="navTitle"><a href="#">Customer Service <span class="arrow">&#10148; </span></a>
+          <ul>
+            <li><a href="#">Frequent Buyer Program</a></li>
+            <li><a href="#">Ordering</a></li>
+            <li><a href="#">Delivery</a></li>
+            <li><a href="#">Payment</a></li>
+            <li><a href="#">Bulk Order Pricing</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Resalers</a></li>
+          </ul>
+        </li>
+        <li class="navTitle"><a href="#">Start Order</a></li>
+      </ul>
+    </nav>
 
-    <body>
-
-      <nav class=" navmain-typeface" role="navigation">
-        <ul class="navList">
-          <li class="navTitle"><a href="#">Home</a></li>
-          <li class="navTitle "><a href="#">Specials <span class="arrow">&#10148; </span></a>
-            <ul class=" shortTxtNav">
-              <li><a href="#">Weekly Ad</a></li>
-              <li><a href="#">New Items</a></li>
-            </ul>
-          </li>
-          <li class="navTitle"><a href="#">Products <span class="arrow">&#10148; </span></a>
-            <ul>
-              <li><a href="#">Beer</a></li>
-              <li><a href="#">Dairy</a></li>
-              <li><a href="#">Disposable Containers</a></li>
-              <li><a href="#">Ethnic Food</a></li>
-              <li><a href="#">Frozen Food</a></li>
-              <li><a href="#">Grocery</a></li>
-              <li><a href="#">Janitorial Supplies</a></li>
-              <li><a href="#">Meat and Poultry</a></li>
-              <li><a href="#">Produce and Fruit</a></li>
-              <li><a href="#">Seafood</a></li>
-              <li><a href="#">Softdrinks</a></li>
-            </ul>
-          </li>
-          <li class="navTitle"><a href="#">Customer Service <span class="arrow">&#10148; </span></a>
-            <ul>
-              <li><a href="#">Frequent Buyer Program</a></li>
-              <li><a href="#">Ordering</a></li>
-              <li><a href="#">Delivery</a></li>
-              <li><a href="#">Payment</a></li>
-              <li><a href="#">Bulk Order Pricing</a></li>
-              <li><a href="#">Return Policy</a></li>
-              <li><a href="#">Resalers</a></li>
-            </ul>
-          </li>
-          <li class="navTitle"><a href="#">Start Order</a></li>
-        </ul>
-      </nav>
-
-
-      <carousel>
-        <div class="slideshow-container">
-          <div class="mySlides fade">
-            <a href="">
-              <img class="carouselImg" src="/images/banner1.jpg">
-            </a>
-          </div>
-
-          <div class="mySlides fade">
-            <a href="">
-              <img class="carouselImg" src="/images/banner2.jpg">
-            </a>
-          </div>
-
-          <div class="mySlides fade">
-            <a href="">
-              <img class="carouselImg" src="/images/banner3.jpg">
-            </a>
-          </div>
-
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span>
-          <span class="dot" onclick="currentSlide(2)"></span>
-          <span class="dot" onclick="currentSlide(3)"></span>
+    <!------carousel------>
+    <!------carousel------>
+    <carousel>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <a href="">
+            <img class="carouselImg" src="/images/banner1.jpg">
+          </a>
         </div>
 
-      </carousel>
-
-
-      <products>
-        <div class="headline main-typeface"> Our Products
-          <hr>
+        <div class="mySlides fade">
+          <a href="">
+            <img class="carouselImg" src="/images/banner2.jpg">
+          </a>
         </div>
 
-        <div class="left tile">
-          <img class="productImg" src="/images/topLeft.png">
-          <span>
-            <button id="modalBtnStart" onclick="modalStart()" class="button typeface"> more items
-              &#10095;&#10095;</button>
-          </span>
-          <div class="title main-typeface"> Meat & Poultry</div>
-          <div class="details typeface">
-            <a href=#>product details &#10095;&#10095;</a>
-          </div>
+        <div class="mySlides fade">
+          <a href="">
+            <img class="carouselImg" src="/images/banner3.jpg">
+          </a>
         </div>
 
-        <div class="mid tile">
-          <img class="productImg" src="/images/topMid.png">
-          <span>
-            <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
-          </span>
-          <div class="title main-typeface"> Produce & Fruit </div>
-          <div class="details typeface">
-            <a href=#>product details &#10095;&#10095;</a>
-          </div>
-        </div>
-
-        <div class="right tile">
-          <img class="productImg" src="/images/topRight.png">
-          <span>
-            <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
-          </span>
-          <div class="title main-typeface"> Seafood </div>
-          <div class="details typeface">
-            <a href=#>product details &#10095;&#10095;</a>
-          </div>
-        </div>
-
-        <div class="left tile">
-          <img class="productImg" src="/images/midLeft.png" width="100px" height="100px">
-          <span>
-            <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
-          </span>
-          <div class="title main-typeface"> Frozen Food </div>
-          <div class="details typeface">
-            <a href=#>product details &#10095;&#10095;</a>
-          </div>
-        </div>
-
-        <div class="mid tile">
-          <img class="productImg" src="/images/midMid.png">
-          <span>
-            <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
-          </span>
-          <div class="title main-typeface"> Grocery </div>
-          <div class="details typeface">
-            <a href=#>product details &#10095;&#10095;</a>
-          </div>
-        </div>
-
-        <div class="right tile">
-          <img class="productImg" src="/images/midRight.png">
-          <span>
-            <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
-          </span>
-          <div class="title main-typeface"> Soft Drinks</div>
-          <div class="details typeface">
-            <a href=#>product details &#10095;&#10095;</a>
-          </div>
-        </div>
-
-        <div class="left tile">
-          <img class="productImg" src="/images/botLeft.png">
-          <span>
-            <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
-          </span>
-          <div class="title main-typeface"> Dairy </div>
-          <div class="details typeface">
-            <a href=#>product details &#10095;&#10095;</a>
-          </div>
-        </div>
-
-        <div class="mid tile">
-          <img class="productImg" src="/images/botMid.png">
-          <span>
-            <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
-          </span>
-          <div class="title main-typeface"> Containers </div>
-          <div class="details typeface">
-            <a href=#>product details &#10095;&#10095;</a>
-          </div>
-        </div>
-
-        <div class="right tile">
-          <img class="productImg" src="/images/botRight.png">
-          <span>
-            <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
-          </span>
-          <div class="title main-typeface"> Ethnic Food</div>
-          <div class="details typeface">
-            <a href=#>product details &#10095;&#10095;</a>
-          </div>
-        </div>
-      </products>
-      <!-- ----Modal - Products---- -->
-      <!-- ----Modal - Products---- -->
-      <div class="modal-container noSelect">
-
-        <div class="modal-content noSelect">
-          <img class="modalImg" src="/images/modal/chicken.png" height="200px" width=200px>
-          <a class="modalPrev" onclick="plusModal(-1)">&#10094;</a>
-
-          <span class="closeBtn" onclick="modalClose()">&times;</span>
-
-          <p class="modal-title main-typeface">Chicken</p>
-
-
-
-          <div class="item-text">
-            We offer over 20 different varieties of chicken cuts; boneless skinless thigh, leg and breast meat just to
-            name a few for you to select from.
-
-            <ul>
-              <li>
-                Breaded Cooked Chicken: Breast Patty and 4 Pieces Portion
-              </li>
-              <li>
-                Boneless Skinless Whole Butterfly Breast Meat; Fresh and Frozen
-              </li>
-              <li>
-                Drumsticks
-              </li>
-              <li>
-                Leg Quarters, Whole Legs
-              </li>
-              <li>
-                Leg Meat: Boneless Skinless, Fresh and Frozen
-              </li>
-              <li>
-                Thigh Meat: Boneless Skinless, Fresh and Frozen
-              </li>
-              <li>
-                Chicken Wings: Miscut, Whole
-              </li>
-              <li>
-                Wogs: 2.0 -2.25 lbs and 3.25 -3.5 lbs Whole Body
-              </li>
-            </ul>
-
-            We offer over 20 different varieties of cuts for you to select from.</div>
-
-          <a class="modalNext" onclick="plusModal(1)">&#10095;</a>
-        </div>
-
-        <div class="modal-content ">
-
-          <span class="closeBtn" onclick="modalClose()">&times;</span>
-
-          <p class="modal-title main-typeface">Lamb</p>
-
-          <a class="modalPrev" onclick="plusModal(-1)">&#10094;</a>
-
-          <img class="modalImg" src="/images/modal/lamb.png" height="200px" width=200px>
-
-          <div class="item-text">
-            We provide Boneless Lamb Leg and Boneless Lamb shoulder for your food service and restaurant need
-            <ul>
-              <li>
-                Leg-Boneless
-              </li>
-              <li>
-                Mutton – 6ways
-              </li>
-            </ul>
-          </div>
-
-          <a class="modalNext" onclick="plusModal(1)">&#10095;</a>
-        </div>
-
-        <div class="modal-content ">
-
-          <span class="closeBtn" onclick="modalClose()">&times;</span>
-
-          <p class="modal-title main-typeface">Deli Meat</p>
-
-          <a class="modalPrev" onclick="plusModal(-1)">&#10094;</a>
-
-          <img class="modalImg" src="/images/modal/deli.png" height="200px" width=200px>
-
-          <div class="item-text">
-            We offer over 15 different types of Deli products for your selection including Ham, Pastrami, Roast Beef,
-            Turkey and more
-            <ul>
-              <li>
-                Ham: Chopped, Black Forest, Cook Sliced
-              </li>
-              <li>
-                Tavern Ham: Smoked and Slice
-              </li>
-              <li>
-                Pastrami: Whole and Slice
-              </li>
-              <li>
-                Roast Beef: Whole and Slice
-              </li>
-              <li>
-                Turkey: Breast Oven Prepare, Cooked Slice White Meat, White Oven Roast
-              </li>
-              <li>
-                Chorizo: Beef and Pork
-              </li>
-            </ul>
-          </div>
-
-          <a class="modalNext" onclick="plusModal(1)">&#10095;</a>
-        </div>
-
-        <div class="modal-content ">
-
-          <span class="closeBtn" onclick="modalClose()">&times;</span>
-
-          <p class="modal-title main-typeface">Pork</p>
-
-          <a class="modalPrev" onclick="plusModal(-1)">&#10094;</a>
-
-          <img class="modalImg" src="/images/modal/pork.png" height="200px" width=200px>
-
-          <div class="item-text">
-            We have more than 20 varieties of Pork products for you to choose from. We are a leading wholesale supplier
-            of pork products in the LA county area with national brands such as IBP, Excel, Cargill, Seaboard and
-            Farmland.
-            <ul>
-              <li>
-                Baby Back Ribs
-              </li>
-              <li>
-                Bellies: Trimmed Skin-On, Skinless
-              </li>
-              <li>
-                Briskets Bone
-              </li>
-              <li>
-                Boneless Cushion Picnic
-              </li>
-              <li>
-                Bone In and Boneless Shoulder Butt
-              </li>
-              <li>
-                Center Cut Loin
-              </li>
-              <li>
-                Chops: 4 oz. Center Cut and 5 oz. End Cut
-              </li>
-              <li>
-                Ground Pork
-              </li>
-              <li>
-                Neck Bone
-              </li>
-              <li>
-                Spareribs – Light & Medium
-              </li>
-              <li>
-                Stomach
-              </li>
-              <li>
-                Tongues
-              </li>
-            </ul>
-          </div>
-
-          <a class="modalNext" onclick="plusModal(1)">&#10095;</a>
-        </div>
-
-        <div class="modal-content ">
-
-          <span class="closeBtn" onclick="modalClose()">&times;</span>
-
-          <p class="modal-title main-typeface">Beef</p>
-
-          <a class="modalPrev" onclick="plusModal(-1)">&#10094;</a>
-
-          <img class="modalImg" src="/images/modal/beef.png" height="200px" width=200px>
-
-          <div class="item-text">
-            We offer quality national brands such as IBP, Excel, Cargill, Harris Ranch, Swift, Great Omaha and National;
-            names you can trust in over 40 different cuts of beef. For your convenience most beef products are available
-            for you to purchase less than a case.
-
-            <ul>
-              <li>
-                Back Ribs Bone In
-              </li>
-              <li>Bone Cut
-              </li>
-              <li>Brisket-Boneless
-              </li>
-              <li>Ball Tip
-              </li>
-              <li>Cheek Meat
-              </li>
-              <li>Chuck Roll
-              </li>
-              <li>Eye Round
-              </li>
-              <li>Feet / Tail / Cheek
-              </li>
-              <li>Steer Flank Steak
-              </li>
-              <li>Steer Flap Meat
-              </li>
-              <li>Franks: 6” 5/1, and 6.75” 4/1
-              </li>
-              <li>Ground 80%/20%
-              </li>
-              <li>Inside Round
-              </li>
-              <li>Leg Tendons
-              </li>
-              <li>Patties: Ground 4/1, 5/1
-              </li>
-              <li>Ribeye Steak 8 oz.
-              </li>
-              <li>Short Rib: Korean Style Center Cut 3/8”
-              </li>
-              <li>New York Steak 8 oz. End-End
-              </li>
-              <li>Stew: Asada Boneless
-              </li>
-              <li>
-                Top Sirloin Boneless
-              </li>
-              Tripe: Honeycomb, Omasum, Scalded
-              </li>
-
-            </ul>
-          </div>
-
-          <a class="modalNext" onclick="plusModal(1)">&#10095;</a>
-        </div>
-
-
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
       </div>
 
+    </carousel>
 
-      <!-- ----Specials---- -->
-      <!-- ----Specials---- -->
-      <specials>
-        <div class="specialsTextLeft headline main-typeface"> Weekly Ad <hr>
+    <!------products------>
+    <!------products------>
+    <products>
+      <div class="headline main-typeface"> Our Products
+        <hr>
+      </div>
+
+      <div class="left tile">
+        <img class="productImg" src="/images/topLeft.png">
+        <span>
+          <button id="modalBtnStart" onclick="modalStart()" class="button typeface"> more items
+            &#10095;&#10095;</button>
+        </span>
+        <div class="title main-typeface"> Meat & Poultry</div>
+        <div class="details typeface">
+          <a href=#>product details &#10095;&#10095;</a>
         </div>
-        <img class="specialsImgLeft imgSpecs" src="/images/specials/weekly.png">
-        <div class="specDetails typeface">
-          <a onclick="specialsModalViewer('left')" href=#>see all items &#10095;&#10095;</a>
+      </div>
+
+      <div class="mid tile">
+        <img class="productImg" src="/images/topMid.png">
+        <span>
+          <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
+        </span>
+        <div class="title main-typeface"> Produce & Fruit </div>
+        <div class="details typeface">
+          <a href=#>product details &#10095;&#10095;</a>
+        </div>
+      </div>
+
+      <div class="right tile">
+        <img class="productImg" src="/images/topRight.png">
+        <span>
+          <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
+        </span>
+        <div class="title main-typeface"> Seafood </div>
+        <div class="details typeface">
+          <a href=#>product details &#10095;&#10095;</a>
+        </div>
+      </div>
+
+      <div class="left tile">
+        <img class="productImg" src="/images/midLeft.png" width="100px" height="100px">
+        <span>
+          <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
+        </span>
+        <div class="title main-typeface"> Frozen Food </div>
+        <div class="details typeface">
+          <a href=#>product details &#10095;&#10095;</a>
+        </div>
+      </div>
+
+      <div class="mid tile">
+        <img class="productImg" src="/images/midMid.png">
+        <span>
+          <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
+        </span>
+        <div class="title main-typeface"> Grocery </div>
+        <div class="details typeface">
+          <a href=#>product details &#10095;&#10095;</a>
+        </div>
+      </div>
+
+      <div class="right tile">
+        <img class="productImg" src="/images/midRight.png">
+        <span>
+          <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
+        </span>
+        <div class="title main-typeface"> Soft Drinks</div>
+        <div class="details typeface">
+          <a href=#>product details &#10095;&#10095;</a>
+        </div>
+      </div>
+
+      <div class="left tile">
+        <img class="productImg" src="/images/botLeft.png">
+        <span>
+          <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
+        </span>
+        <div class="title main-typeface"> Dairy </div>
+        <div class="details typeface">
+          <a href=#>product details &#10095;&#10095;</a>
+        </div>
+      </div>
+
+      <div class="mid tile">
+        <img class="productImg" src="/images/botMid.png">
+        <span>
+          <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
+        </span>
+        <div class="title main-typeface"> Containers </div>
+        <div class="details typeface">
+          <a href=#>product details &#10095;&#10095;</a>
+        </div>
+      </div>
+
+      <div class="right tile">
+        <img class="productImg" src="/images/botRight.png">
+        <span>
+          <button id="modalBtnStart" class="button typeface"> more items &#10095;&#10095;</button>
+        </span>
+        <div class="title main-typeface"> Ethnic Food</div>
+        <div class="details typeface">
+          <a href=#>product details &#10095;&#10095;</a>
+        </div>
+      </div>
+    </products>
+
+    <!------Modal - Products------>
+    <!------Modal - Products------>
+    <div class="modal-container noSelect">
+
+      <div class="modal-content noSelect">
+        <img class="modalImg" src="/images/modal/chicken.png" height="200px" width=200px>
+        <a class="modalPrev" onclick="plusModal(-1)">&#10094;</a>
+        <span class="closeBtn" onclick="modalClose()">&times;</span>
+        <p class="modal-title main-typeface">Chicken</p>
+        <div class="item-text">
+          We offer over 20 different varieties of chicken cuts; boneless skinless thigh, leg and breast meat just to
+          name a few for you to select from.
+          <ul>
+            <li>
+              Breaded Cooked Chicken: Breast Patty and 4 Pieces Portion
+            </li>
+            <li>
+              Boneless Skinless Whole Butterfly Breast Meat; Fresh and Frozen
+            </li>
+            <li>
+              Drumsticks
+            </li>
+            <li>
+              Leg Quarters, Whole Legs
+            </li>
+            <li>
+              Leg Meat: Boneless Skinless, Fresh and Frozen
+            </li>
+            <li>
+              Thigh Meat: Boneless Skinless, Fresh and Frozen
+            </li>
+            <li>
+              Chicken Wings: Miscut, Whole
+            </li>
+            <li>
+              Wogs: 2.0 -2.25 lbs and 3.25 -3.5 lbs Whole Body
+            </li>
+          </ul>
+
+          We offer over 20 different varieties of cuts for you to select from.</div>
+
+        <a class="modalNext" onclick="plusModal(1)">&#10095;</a>
+      </div>
+
+      <div class="modal-content ">
+        <span class="closeBtn" onclick="modalClose()">&times;</span>
+        <p class="modal-title main-typeface">Lamb</p>
+        <a class="modalPrev" onclick="plusModal(-1)">&#10094;</a>
+        <img class="modalImg" src="/images/modal/lamb.png" height="200px" width=200px>
+        <div class="item-text">
+          We provide Boneless Lamb Leg and Boneless Lamb shoulder for your food service and restaurant need
+          <ul>
+            <li>
+              Leg-Boneless
+            </li>
+            <li>
+              Mutton – 6ways
+            </li>
+          </ul>
         </div>
 
-        <div class="specialsTextRight headline main-typeface"> Featured Items
-          <hr>
+        <a class="modalNext" onclick="plusModal(1)">&#10095;</a>
+      </div>
+
+      <div class="modal-content ">
+        <span class="closeBtn" onclick="modalClose()">&times;</span>
+        <p class="modal-title main-typeface">Deli Meat</p>
+        <a class="modalPrev" onclick="plusModal(-1)">&#10094;</a>
+        <img class="modalImg" src="/images/modal/deli.png" height="200px" width=200px>
+        <div class="item-text">
+          We offer over 15 different types of Deli products for your selection including Ham, Pastrami, Roast Beef,
+          Turkey and more
+          <ul>
+            <li>
+              Ham: Chopped, Black Forest, Cook Sliced
+            </li>
+            <li>
+              Tavern Ham: Smoked and Slice
+            </li>
+            <li>
+              Pastrami: Whole and Slice
+            </li>
+            <li>
+              Roast Beef: Whole and Slice
+            </li>
+            <li>
+              Turkey: Breast Oven Prepare, Cooked Slice White Meat, White Oven Roast
+            </li>
+            <li>
+              Chorizo: Beef and Pork
+            </li>
+          </ul>
         </div>
-        <img class="specialsImgRight imgSpecs" src="/images/specials/feat.png">
-        <div class="specDetails typeface">
-          <a onclick="specialsModalViewer('right')" href=#>see all items &#10095;&#10095;</a>
+
+        <a class="modalNext" onclick="plusModal(1)">&#10095;</a>
+      </div>
+
+      <div class="modal-content ">
+        <span class="closeBtn" onclick="modalClose()">&times;</span>
+        <p class="modal-title main-typeface">Pork</p>
+        <a class="modalPrev" onclick="plusModal(-1)">&#10094;</a>
+        <img class="modalImg" src="/images/modal/pork.png" height="200px" width=200px>
+        <div class="item-text">
+          We have more than 20 varieties of Pork products for you to choose from. We are a leading wholesale supplier
+          of pork products in the LA county area with national brands such as IBP, Excel, Cargill, Seaboard and
+          Farmland.
+          <ul>
+            <li>
+              Baby Back Ribs
+            </li>
+            <li>
+              Bellies: Trimmed Skin-On, Skinless
+            </li>
+            <li>
+              Briskets Bone
+            </li>
+            <li>
+              Boneless Cushion Picnic
+            </li>
+            <li>
+              Bone In and Boneless Shoulder Butt
+            </li>
+            <li>
+              Center Cut Loin
+            </li>
+            <li>
+              Chops: 4 oz. Center Cut and 5 oz. End Cut
+            </li>
+            <li>
+              Ground Pork
+            </li>
+            <li>
+              Neck Bone
+            </li>
+            <li>
+              Spareribs – Light & Medium
+            </li>
+            <li>
+              Stomach
+            </li>
+            <li>
+              Tongues
+            </li>
+          </ul>
         </div>
 
-      </specials>
+        <a class="modalNext" onclick="plusModal(1)">&#10095;</a>
+      </div>
 
+      <div class="modal-content ">
+        <span class="closeBtn" onclick="modalClose()">&times;</span>
+        <p class="modal-title main-typeface">Beef</p>
+        <a class="modalPrev" onclick="plusModal(-1)">&#10094;</a>
+        <img class="modalImg" src="/images/modal/beef.png" height="200px" width=200px>
+        <div class="item-text">
+          We offer quality national brands such as IBP, Excel, Cargill, Harris Ranch, Swift, Great Omaha and National;
+          names you can trust in over 40 different cuts of beef. For your convenience most beef products are available
+          for you to purchase less than a case.
+          <ul>
+            <li>
+              Back Ribs Bone In
+            </li>
+            <li>Bone Cut
+            </li>
+            <li>Brisket-Boneless
+            </li>
+            <li>Ball Tip
+            </li>
+            <li>Cheek Meat
+            </li>
+            <li>Chuck Roll
+            </li>
+            <li>Eye Round
+            </li>
+            <li>Feet / Tail / Cheek
+            </li>
+            <li>Steer Flank Steak
+            </li>
+            <li>Steer Flap Meat
+            </li>
+            <li>Franks: 6” 5/1, and 6.75” 4/1
+            </li>
+            <li>Ground 80%/20%
+            </li>
+            <li>Inside Round
+            </li>
+            <li>Leg Tendons
+            </li>
+            <li>Patties: Ground 4/1, 5/1
+            </li>
+            <li>Ribeye Steak 8 oz.
+            </li>
+            <li>Short Rib: Korean Style Center Cut 3/8”
+            </li>
+            <li>New York Steak 8 oz. End-End
+            </li>
+            <li>Stew: Asada Boneless
+            </li>
+            <li>
+              Top Sirloin Boneless
+            </li>
+            Tripe: Honeycomb, Omasum, Scalded
+            </li>
 
-
-      <!-- ----Modal - Specials---- -->
-      <!-- ----Modal - Specials---- -->
-      <div class="specials-modal-container-left noSelect">
-        <span class="specialsCloseBtn" onclick="specialsModalClose('left')">&times;</span>
-        <div class="specials-modal-left noSelect">
-          <img class="specialsModalImg" src="/images/specials/weekly.png" >
+          </ul>
         </div>
+
+        <a class="modalNext" onclick="plusModal(1)">&#10095;</a>
       </div>
     </div>
 
-    <div class="specials-modal-container-right noSelect">
-      <span class="specialsCloseBtn" onclick="specialsModalClose('right')">&times;</span>
-        <div class="specials-modal-right noSelect">
-          <img class="specialsModalImg" src="/images/specials/feat.png" >
-        </div>
+
+    <!------Specials------>
+    <!------Specials------>
+    <specials>
+      <div class="specialsTextLeft headline main-typeface"> Weekly Ad
+        <hr>
+      </div>
+      <img class="specialsImgLeft imgSpecs" src="/images/specials/weekly.png">
+      <div class="specDetails typeface">
+        <a onclick="specialsModalViewer('left')" href=#>see all items &#10095;&#10095;</a>
       </div>
 
-      <footer class="wrapper-item">
-        <!-- <hr> -->
-      </footer>
+      <div class="specialsTextRight headline main-typeface"> Featured Items
+        <hr>
+      </div>
+      <img class="specialsImgRight imgSpecs" src="/images/specials/feat.png">
+      <div class="specDetails typeface">
+        <a onclick="specialsModalViewer('right')" href=#>see all items &#10095;&#10095;</a>
+      </div>
+
+    </specials>
+
+    <!------Modal - Specials------>
+    <!------Modal - Specials------>
+    <div class="specials-modal-container-left noSelect">
+      <span class="specialsCloseBtn" onclick="specialsModalClose('left')">&times;</span>
+      <div class="specials-modal-left noSelect">
+        <img class="specialsModalImg" src="/images/specials/weekly.png">
+      </div>
+    </div>
+    </div>
+    <div class="specials-modal-container-right noSelect">
+      <span class="specialsCloseBtn" onclick="specialsModalClose('right')">&times;</span>
+      <div class="specials-modal-right noSelect">
+        <img class="specialsModalImg" src="/images/specials/feat.png">
+      </div>
+    </div>
+
+
+
+    <!------footer------>
+    <!------footer------>
+    <footer class="typeface">
+      <div class="links">
+        <ul class="footer-links">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Location</a></li>
+        </ul>
+      </div>
+      <div class="copyright">
+        Copyright &copy; Canton Food Co. |
+        Wholesale food serving LA County, Los Angeles, CA
+      </div>
+      <div class="designInfo">
+        Designed by Bryan.E
+      </div>
+    </footer>
+    
   </wrapper>
 </body>
 
