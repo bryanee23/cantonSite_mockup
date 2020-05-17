@@ -461,7 +461,7 @@
         </div>
         <img class="specialsImgLeft imgSpecs" src="/images/specials/weekly.png">
         <div class="specDetails typeface">
-          <a onclick="specialsModalViewer()" href=#>see all items &#10095;&#10095;</a>
+          <a onclick="specialsModalViewer('left')" href=#>see all items &#10095;&#10095;</a>
         </div>
 
         <div class="specialsTextRight headline main-typeface"> Featured Items
@@ -469,7 +469,7 @@
         </div>
         <img class="specialsImgRight imgSpecs" src="/images/specials/feat.png">
         <div class="specDetails typeface">
-          <a onclick="specialsModalViewer()" href=#>see all items &#10095;&#10095;</a>
+          <a onclick="specialsModalViewer('right')" href=#>see all items &#10095;&#10095;</a>
         </div>
 
       </specials>
@@ -478,11 +478,18 @@
 
       <!-- ----Modal - Specials---- -->
       <!-- ----Modal - Specials---- -->
-      <div class="specials-modal-container noSelect">
-
-        <div class="specials-modal-content noSelect">
-          <span class="specialsCloseBtn" onclick="specialsModalClose()">&times;</span>
+      <div class="specials-modal-container-left noSelect">
+        <div class="specials-modal-left noSelect">
+          <span class="specialsCloseBtn" onclick="specialsModalClose('left')">&times;</span>
           <img class="modalImg" src="/images/specials/weekly.png" >
+        </div>
+      </div>
+    </div>
+
+    <div class="specials-modal-container-right noSelect">
+        <div class="specials-modal-right noSelect">
+          <span class="specialsCloseBtn" onclick="specialsModalClose('right')">&times;</span>
+          <img class="modalImg" src="/images/specials/feat.png" >
         </div>
       </div>
 

@@ -46,20 +46,25 @@ function showModal(n) {
 
 function modalStart(){
   var modalViewer = document.getElementsByClassName("modal-container");
-  modalViewer[0].style.display = "block"
+    modalViewer[0].style.display = "block"
 }
 
 function modalClose(){
   var modalViewer = document.getElementsByClassName("modal-container");
-  modalViewer[0].style.display = "none"
+    modalViewer[0].style.display = "none"
 }
 
-function specialsModalViewer(){
-  var modalViewer = document.getElementsByClassName("specials-modal-container");
-  modalViewer[0].style.display = "block"
+
+
+function specialsModalViewer(name){
+  var modalViewer = document.getElementsByClassName(`specials-modal-container-${name}`);
+    modalViewer[0].style.display = "block"
+
+  var modalContent = document.getElementsByClassName((`specials-modal-${name}`));
+    modalContent[0].style.display = "block"
 }
 
-function specialsModalClose(){
-  var modalViewer = document.getElementsByClassName("specials-modal-container");
-  modalViewer[0].style.display = "none"
+function specialsModalClose(name){
+  var modalViewer = document.getElementsByClassName(`specials-modal-container-${name}`);
+    modalViewer[0].style.display = "none"
 }

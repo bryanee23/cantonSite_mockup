@@ -507,7 +507,7 @@ specials hr {
   justify-self: center;
 }
 
-.specials-modal-container{
+.specials-modal-container-right,.specials-modal-container-left{
   display: none;
   position: fixed;
   z-index: 1;
@@ -526,11 +526,13 @@ specials hr {
   font-size: 90px;
   color: #ffffff;
 }
-.specials-modal-content{
+.specials-modal-left,.specials-modal-right{
   display: none;
   margin: 10% 17% auto;
   justify-self: center;
 }
+
+
 
 footer {
   grid-area: footer;
