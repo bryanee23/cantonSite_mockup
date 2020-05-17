@@ -45,34 +45,12 @@ function showModal(n) {
   slides[modalIndex - 1].style.display = "grid";
 }
 
-string = "modal-container"
-function test(class){
-
-  if (class === "modal-container") {
-    console.log('here')
-    }
-    modalStart()
-}
-
-
 function modalStart(){
   var modalViewer = document.getElementsByClassName("modal-container");
+  // console.log(modalViewer[0].style.display)
   modalViewer[0].style.display = "block"
 }
-
-
 function modalClose(){
   var modalViewer = document.getElementsByClassName("modal-container");
-  modalViewer[0].style.display = "none"
-}
-
-
-function specialsModalViewer(name){
-  console.log(name)
-  var modalViewer = document.getElementsByClassName("specials-modal-container");
-  modalViewer[0].style.display = "block"
-}
-function specialsModalClose(){
-  var modalViewer = document.getElementsByClassName("specials-modal-container");
   modalViewer[0].style.display = "none"
 }
