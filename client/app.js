@@ -46,10 +46,20 @@ function showModal(n) {
 
 function modalStart(){
   var modalViewer = document.getElementsByClassName("modal-container");
-
   modalViewer[0].style.display = "block"
 }
+
 function modalClose(){
   var modalViewer = document.getElementsByClassName("modal-container");
+  modalViewer[0].style.display = "none"
+}
+
+function specialsModalViewer(){
+  var modalViewer = document.getElementsByClassName("specials-modal-container");
+  modalViewer[0].style.display = "block"
+}
+
+function specialsModalClose(){
+  var modalViewer = document.getElementsByClassName("specials-modal-container");
   modalViewer[0].style.display = "none"
 }
