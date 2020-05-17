@@ -32,11 +32,11 @@ wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "logo logo logo"
+    "header header header"
     "nav nav nav"
     "carousel carousel carousel"
     "products products products"
-    "ads ads ads"
+    "specials specials specials"
     "footer footer footer"
 }
 
@@ -49,8 +49,8 @@ wrapper {
   margin-bottom: 5px;
 }
 
-logo {
-  grid-area: logo;
+header {
+  grid-area: header;
   margin-left: 2%;
   margin-right: 2%;
   padding-top: 20px;
@@ -62,14 +62,14 @@ logo {
   "images images images texts";
 }
 
-logo > .image {
+header > .image {
   grid-area: images;
   background-image: url("../images/logo.jpg");
   background-size: 680px 110px;
   background-repeat: no-repeat;
 }
 
-logo > .text {
+header > .text {
   grid-area: texts;
   color: #363636;
   font-size: 12px;
@@ -95,10 +95,6 @@ nav {
   font-size: 70%;
   }
 
-a {
-  text-decoration: none;
-}
-
 /* entire nav bar list */
 .navList {
   background: #506585;
@@ -109,11 +105,12 @@ a {
 /* text header */
 /* all list element attribute */
 .navList li a {
-  color: rgb(248, 242, 242);
+  text-decoration: none;
+  color: rgb(223, 219, 219);
   font-size: 18px;
 }
 
-.navList  li {
+.navList li {
   background: #506585;
   display: block;
   float: left;
@@ -127,8 +124,10 @@ a {
   margin-left: 60px;
 }
 /* hover over header text  */
-.navTitle:hover {
+.navTitle a:hover {
   text-decoration: underline;
+  color: #ffffff;
+  text-shadow: 1px 0 2px #ffffff;
   cursor: pointer;
   visibility: visible;
   opacity: 1;
@@ -305,15 +304,15 @@ products {
   align-self: center;
   font-size: 27px;
   font-style: italic;
-  text-shadow: 4px 0 22px #506585;
+  text-shadow: 4px 0 10px #506585;
   text-align: center;
 }
 
-hr {
+products hr {
   border: none;
   border-top: 4px dashed #506585;
   width: 880px;
-  /* box-shadow: 0px 0 8px #506585; */
+  position: relative;
 }
 
 
@@ -338,15 +337,6 @@ hr {
   position: relative;
   top: 14px;
 }
-
-
-
-
-
-.modalBtns{
-
-}
-
 
 
 #modalBtnStart {
@@ -387,7 +377,7 @@ hr {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
-.modal-content{
+.topLeft{
   background-color: #fff;
   margin: 10% 13%;
   box-shadow: inset 0 0 1em -0.3em #545454, 2px 2px 8px #545454;
@@ -399,6 +389,10 @@ hr {
     "closeBtn closeBtn closeBtn closeBtn"
     "modalPrev modal-title modal-title modalNext "
     "img modalImg item-text item-text";
+}
+
+.topMid{
+
 }
 
 .item-text{
@@ -454,11 +448,74 @@ hr {
   background-color: #ddd6d6;
 }
 
-ads {
-  grid-area: ads;
-  margin-left: 4%;
-  margin-right: 4%;
-  margin-bottom: 1%;
+specials {
+  grid-area: specials;
+  margin: 4% 3% 4% 4%;
+  display: grid;
+  grid-template-columns: repeat(2 1fr);
+  grid-template-rows: repeat(2 1fr);
+  grid-template-areas:
+  "specialsTextLeft specialsTextRight"
+  "specialsImgLeft specialsImgRight";
+}
+
+
+specials hr {
+  border: none;
+  border-top: 3px dotted #506585;
+  width: 400px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.specialsTextLeft{
+  grid-area: specialsTextLeft;
+}
+
+.specialsTextRight{
+  grid-area: specialsTextRight;
+}
+
+.imgSpecs{
+  justify-self: center;
+  width: 400px;
+  height: 600px;
+  padding: 10px;
+}
+.specialsImgLeft{
+  grid-area: specialsImgLeft;
+}
+
+.specialsImgRight{
+  grid-area: specialsImgRight;
+}
+
+.specDetails {
+  font-size: 12px;
+  position: relative;
+  justify-self: center;
+}
+
+.specials-modal-container{
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.765);
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+}
+
+
+.specials-modal-content{
+  background-color: #fff;
+  margin: 10% 13%;
+  box-shadow: inset 0 0 1em -0.3em #545454, 2px 2px 8px #545454;
+
+  display: block;
+
 }
 
 footer {
