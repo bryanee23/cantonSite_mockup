@@ -34,7 +34,6 @@ function plusModal(n) {
 
 
 function showModal(n) {
-
   var i;
   var slides = document.getElementsByClassName("modal-content");
   if (n > slides.length) { modalIndex = 1 }
@@ -47,7 +46,7 @@ function showModal(n) {
 
 function modalStart(){
   var modalViewer = document.getElementsByClassName("modal-container");
-  // console.log(modalViewer[0].style.display)
+
   modalViewer[0].style.display = "block"
 }
 function modalClose(){
