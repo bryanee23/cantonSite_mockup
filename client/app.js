@@ -1,3 +1,6 @@
+////////////////////////////
+/////// specials modal
+////////////////////////////
 function specialsModalViewer(name){
   var modalViewer = document.getElementsByClassName(`specials-modal-container-${name}`);
     modalViewer[0].style.display = "block"
@@ -11,6 +14,9 @@ function specialsModalClose(name){
     modalViewer[0].style.display = "none"
 }
 
+////////////////////////////
+/////// image carousel
+////////////////////////////
 var slideIndex = 1;
 showSlides(slideIndex);
 
