@@ -415,14 +415,16 @@ products hr {
   padding-bottom: 10px;
   padding-right: 10px;
 }
+
 .closeBtn{
   cursor: pointer;
   user-select: none;
-  grid-area: closeBtn;
-  float: left;
-  font-size: 40px;
-  padding-left: 25px;
-  padding-top: 2px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 90px;
+  color: #ffffff;
+  position: fixed;
+  margin: -7% 0%;
 }
 
 .modalPrev , .modalNext {
