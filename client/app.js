@@ -1,3 +1,16 @@
+function specialsModalViewer(name){
+  var modalViewer = document.getElementsByClassName(`specials-modal-container-${name}`);
+    modalViewer[0].style.display = "block"
+
+  var modalContent = document.getElementsByClassName((`specials-modal-${name}`));
+    modalContent[0].style.display = "block"
+}
+
+function specialsModalClose(name){
+  var modalViewer = document.getElementsByClassName(`specials-modal-container-${name}`);
+    modalViewer[0].style.display = "none"
+}
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -55,16 +68,3 @@ function modalClose(){
 }
 
 
-
-function specialsModalViewer(name){
-  var modalViewer = document.getElementsByClassName(`specials-modal-container-${name}`);
-    modalViewer[0].style.display = "block"
-
-  var modalContent = document.getElementsByClassName((`specials-modal-${name}`));
-    modalContent[0].style.display = "block"
-}
-
-function specialsModalClose(name){
-  var modalViewer = document.getElementsByClassName(`specials-modal-container-${name}`);
-    modalViewer[0].style.display = "none"
-}
