@@ -13,7 +13,7 @@
 body,
 html {
   height: 100vh;
-  font-size: 62.5%; /* =10px */
+  font-size: 62.5%; /* font = 10px */
 }
 
 .typeface {
@@ -49,7 +49,8 @@ body {
   /* max-width: 155em; */
   margin: -1% 40em auto 40em;
   background-color: #fff;
-  border: .2rem solid green;
+  border: .16rem solid #dae1ece7;
+  box-shadow: 0.2em 0.2em 0.85em #506585;
   padding: 1%;
 }
 
@@ -69,42 +70,33 @@ body {
   }
 }
 
-/* header {
+header {
   grid-area: header;
-  margin-left: 2%;
-  margin-right: 2%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 0.5fr;
   grid-template-areas:
-  "images texts";
+  "logo texts";
 }
 
-header .image {
-  grid-area: images;
-}
 header img {
-  width: 30em;
-  height: auto;
+  grid-area: logo;
 }
 
 header .text {
   grid-area: texts;
   color: #363636;
-  font-size: .997rem;
+  /* font-size: .997rem;
   align-self: center;
-  font-family: "Trebuchet MS", sans-serif;
   line-height: auto;
-  padding-left: 3em;
-} */
+  padding-left: 3em; */
+
+}
 
 
 
 
 
-
-
+/*
 nav {
   grid-area: nav;
   margin-left: 2%;

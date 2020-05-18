@@ -5,7 +5,7 @@ export default function Header(props){
   return (
   <header>
       <img className="image" src={Logo} alt='weekly ad' />
-      <div className="text">
+      <div className="text typeface">
         <div>750 S. Alameda Street</div>
         <div>Los Angeles, CA 90021</div>
         <div><strong>Tel:</strong> (213) 688-7707</div>
