@@ -73,9 +73,9 @@ body {
 header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 1fr 0.5fr;
+  grid-template-columns: 1fr 0fr;
   grid-template-areas:
-  "logo texts";
+  "logo text";
 }
 
 header img {
@@ -83,13 +83,12 @@ header img {
 }
 
 header .text {
-  grid-area: texts;
+  grid-area: text;
   color: #363636;
-  /* font-size: .997rem;
+  align-items: center;
   align-self: center;
-  line-height: auto;
-  padding-left: 3em; */
-
+  font-size: 180%;
+  line-height: 1.5em;
 }
 
 
