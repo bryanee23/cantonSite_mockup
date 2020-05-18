@@ -21,9 +21,9 @@ import ReactDOM from 'react-dom';
     </div>
 
       <div className="designInfo">
-        Designed by Bryan.E
+        Designed by Bryan.Edd
     </div>
-    
+
     </footer>
   )
 }

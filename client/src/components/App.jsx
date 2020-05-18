@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './Header';
-import Nav from './Nav';
-import Carousel from './Carousel';
-import Products from './Products';
-import Specials from './Specials';
+// import Header from './Header';
+// import Nav from './Nav';
+// import Carousel from './Carousel';
+// import Products from './Products';
+// import Specials from './Specials';
 import Footer from './Footer';
 
 const ColoredLine = ({ color }) => (
@@ -14,19 +14,14 @@ const ColoredLine = ({ color }) => (
 export default class App extends React.Component {
   render() {
     return (
-      <wraper>
-        <Header />
+      <wrapper>
+        {/* <Header />
         <Nav />
         <Carousel />
-        <Products />
+        <Products /> */}
+        {/* <Specials /> */}
         <Footer />
-        <Specials />
-      </wraper>
-
-
-
-
-
+      </wrapper>
     )
   }
 }
