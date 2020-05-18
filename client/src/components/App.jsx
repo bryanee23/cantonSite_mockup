@@ -14,7 +14,7 @@ export default class App extends React.Component {
   render() {
     return (
       <div className="main-grid">
-        <div className="wrapper">
+        <div className="container">
           <Header />
           {/* <Nav /> */}
           {/* <Carousel /> */}

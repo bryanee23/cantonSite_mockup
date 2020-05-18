@@ -3,7 +3,7 @@ import Logo from './images/logo.jpg';
 
 export default function Header(props){
   return (
-    <header className="wrapper">
+  <header>
       <img className="image" src={Logo} alt='weekly ad' />
       <div className="text">
         <div>750 S. Alameda Street</div>
