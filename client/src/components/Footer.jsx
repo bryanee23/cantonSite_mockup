@@ -1,9 +1,6 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-
 
 export default function Footer(props){
-
   return (
     <footer className="typeface">
       <div className="links">

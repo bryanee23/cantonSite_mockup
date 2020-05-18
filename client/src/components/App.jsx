@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-// import Header from './Header';
+import Header from './Header';
 // import Nav from './Nav';
 // import Carousel from './Carousel';
 // import Products from './Products';
@@ -14,16 +13,17 @@ const ColoredLine = ({ color }) => (
 export default class App extends React.Component {
   render() {
     return (
-      <body>
-      <wrapper>
-        {/* <Header />
-        <Nav />
-        <Carousel />
-      <Products /> */}
-        {/* <Specials /> */}
-        <Footer />
-      </wrapper>
-      </body>
+      <div className="main-grid">
+        <div className="wrapper">
+          <Header />
+          {/* <Nav /> */}
+          {/* <Carousel /> */}
+          {/* <Products /> */}
+          {/* <Specials /> */}
+          {/* <Footer /> */}
+        </div>
+      </div>
+
     )
   }
 }
