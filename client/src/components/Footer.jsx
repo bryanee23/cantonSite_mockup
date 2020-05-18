@@ -6,7 +6,6 @@ export default function Footer(props){
 
   return (
     <footer className="typeface">
-
       <div className="links">
         <ul className="footer-links">
           <li><a href="#">About Us</a></li>
@@ -23,7 +22,6 @@ export default function Footer(props){
       <div className="designInfo">
         Designed by Bryan.Edd
     </div>
-
     </footer>
   )
 }
