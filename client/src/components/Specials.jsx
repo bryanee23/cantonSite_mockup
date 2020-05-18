@@ -4,22 +4,24 @@ import FeaturesAd from './images/specials/feat.png';
 import Weekly from './images/specials/weekly.png';
 
 
- const Specials = (props) => {
+const Specials = (props) => {
+
+
 
   return (
-<div>
+    <div>
 
-    <div className="specialsTextLeft headline main-typeface"> Weekly Ad
+      <div className="specialsTextLeft headline main-typeface"> Weekly Ad
 
     </div>
 
       <div>
-        <img src={Weekly} alt='weekly ad'/>
+        <img src={Weekly} alt='weekly ad' />
       </div>
-</div>
+    </div>
 
 
-)
+  )
 }
 export default Specials
 

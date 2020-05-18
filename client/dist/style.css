@@ -32,7 +32,7 @@ wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
-    "logo logo logo"
+    "header header header"
     "nav nav nav"
     "carousel carousel carousel"
     "products products products"
@@ -49,8 +49,8 @@ wrapper {
   margin-bottom: 5px;
 }
 
-logo {
-  grid-area: logo;
+header {
+  grid-area: header;
   margin-left: 2%;
   margin-right: 2%;
   padding-top: 20px;
@@ -62,14 +62,14 @@ logo {
   "images images images texts";
 }
 
-logo > .image {
+header > .image {
   grid-area: images;
   background-image: url("../images/logo.jpg");
   background-size: 680px 110px;
   background-repeat: no-repeat;
 }
 
-logo > .text {
+header > .text {
   grid-area: texts;
   color: #363636;
   font-size: 12px;
