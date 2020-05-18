@@ -51,7 +51,7 @@ body {
   background-color: #fff;
   border: .16rem solid #dae1ece7;
   box-shadow: 0.2em 0.2em 0.85em #506585;
-  padding: 1%;
+  padding: 2% 1% 1%;
 }
 
  @media only screen and (max-width: 800px) {
@@ -73,7 +73,7 @@ body {
 header {
   grid-area: header;
   display: grid;
-  grid-template-columns: 1fr 0fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "logo text";
 }
@@ -82,13 +82,19 @@ header img {
   grid-area: logo;
 }
 
-header .text {
-  grid-area: text;
-  color: #363636;
+#location-text{
+  margin: 0;
+  /* padding: 3em 3em; */
+  padding-left: 5em;
   align-items: center;
   align-self: center;
-  font-size: 180%;
-  line-height: 1.5em;
+}
+header .text li{
+  grid-area: text;
+  color: #363636;
+  font-size: 2em;
+  line-height: 1.7em;
+  list-style: none;
 }
 
 
