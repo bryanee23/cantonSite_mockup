@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
- const Footer = (props) => {
+export default function Footer(props){
 
   return (
     <footer className="typeface">
@@ -27,5 +27,3 @@ import ReactDOM from 'react-dom';
     </footer>
   )
 }
-
-export default Footer
