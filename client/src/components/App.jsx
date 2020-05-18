@@ -14,14 +14,16 @@ const ColoredLine = ({ color }) => (
 export default class App extends React.Component {
   render() {
     return (
+      <body>
       <wrapper>
         {/* <Header />
         <Nav />
         <Carousel />
-        <Products /> */}
+      <Products /> */}
         {/* <Specials /> */}
         <Footer />
       </wrapper>
+      </body>
     )
   }
 }
