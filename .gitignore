@@ -1,3 +1,7 @@
+# OG Project folders
+componentsOG/
+distOG/
+
 # Logs
 logs
 *.log

@@ -1,8 +1,6 @@
 const express = require('express')
 const path = require('path');
 const bodyParser = require('body-parser');
-const morgan = require('morgan');
-const router = require('./router');
 const port = 3000;
 const server = express();
 
