@@ -1,14 +1,13 @@
-const express = require('express');
+const express = require('express')
+const path = require('path');
 const bodyParser = require('body-parser');
-const cors = require('cors');
-
-const app = express();
+const morgan = require('morgan');
+const router = require('./router');
 const port = 3000;
+const server = express();
 
-app.use(cors());
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}))
+server.use(bodyParser.json())
+server.use(bodyParser.urlencoded({ extended: true }))
+server.use(express.static(path.join(__dirname + '/client/dist')));
 
-app.use(express.static(__dirname + '/client'))
-// /Users/bryanevangelista/Documents/projects/canton site/canton/client
-app.listen(port, console.log(`${port} is listening`))
+server.listen(port, () => console.log(`I'll listen to you all day on ${port}`))
