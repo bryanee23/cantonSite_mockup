@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './Header';
-// import Nav from './Nav';
+import Nav from './Nav';
 // import Carousel from './Carousel';
 // import Products from './Products';
 // import Specials from './Specials';
@@ -16,7 +16,7 @@ export default class App extends React.Component {
       <div className="main-grid">
         <div className="container">
           <Header />
-          {/* <Nav /> */}
+          <Nav />
           {/* <Carousel /> */}
           {/* <Products /> */}
           {/* <Specials /> */}
