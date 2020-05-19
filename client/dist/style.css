@@ -102,9 +102,6 @@ body {
   list-style: none;
 }
 
-
-
-
 /* phone header, layout */
 @media (max-width: 400px) {
   #header {
@@ -159,7 +156,8 @@ a {
 
 nav {
   background-color: #506585;
-  padding-left: 6em;
+  padding-left: 4em;
+  border-bottom: 0.3em solid #bec6d2;
 }
 
 nav ul {
@@ -179,9 +177,8 @@ nav a {
 	display:block;
 	padding:0 1em;
 	color:#FFF;
-	text-decoration:none;
-	/* font-size:15px;
-	line-height: 40px; */
+  text-decoration:none;
+  text-transform: uppercase;
 	font-size:2.43em;
 	line-height: 2.4em;
 }

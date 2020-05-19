@@ -4,7 +4,7 @@ import ReactDOM from 'react-dom';
 
 export default function Nav(props){
   return (
-    <nav className=" navmain-typeface" role="navigation">
+    <nav className="typeface" role="navigation">
       <ul className="navList">
         <li className="navTitle"><a href="#">Home</a></li>
         <li className="navTitle "><a href="#">Specials <span className="arrow">&#10148; </span></a>
