@@ -38,6 +38,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto;
   grid-template-areas:
   "header"
   "nav"
@@ -46,8 +47,8 @@ body {
   "specials"
   "footer ";
   grid-area: container;
-  /* max-width: 155em; */
-  margin: -1% 40em auto 40em;
+  max-width: 165em;
+  margin: -1% 40em 1% 40em;
   background-color: #fff;
   border: .16rem solid #dae1ece7;
   box-shadow: 0.2em 0.2em 0.85em #506585;
@@ -65,9 +66,8 @@ body {
     "specials"
     "footer ";
     grid-area: container;
-    margin: -1%;
-    padding: 1%;
-  }
+    max-width: 120em;
+    margin: -1% 0.5% auto 0.5%;
 }
 
 header {
