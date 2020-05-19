@@ -8,7 +8,7 @@ export default function Nav(props){
       <ul className="navList">
         <li className="navTitle"><a href="#">Home</a></li>
         <li className="navTitle "><a href="#">Specials <span className="arrow">&#10148; </span></a>
-          <ul className=" shortTxtNav">
+          <ul id="shortTxtNav">
             <li><a href="#">Weekly Ad</a></li>
             <li><a href="#">New Items</a></li>
           </ul>
