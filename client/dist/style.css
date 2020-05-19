@@ -60,7 +60,7 @@ body {
 @media only screen and (max-width: 400px) {
   .container {
     max-width: 100%;
-    margin: -1% 0.5% auto 0.5%;
+    margin: -1% -0.5% auto 0.5%;
   }
 }
 
@@ -104,7 +104,9 @@ body {
 
 
 
-@media (min-width: 320px) and (max-width: 1200px) {
+
+/* phone header, layout */
+@media (max-width: 400px) {
   #header {
     grid-template-columns: auto;
     grid-template-rows: 1fr 0.5fr;
@@ -118,6 +120,7 @@ body {
 
   #location-text-list{
     margin: 0em -4em;
+    align-self: center;
   }
   #header .text li{
     grid-area: text;
@@ -131,6 +134,18 @@ body {
   }
 }
 
+@media (min-width: 320px) and (max-width: 800px) {
+  #header .text li{
+  font-size: 1.7em;
+  }
+  #logo{
+    height: 13em;
+  }
+  #location-text-list{
+    margin: -1em -6em;
+    align-self: center;
+  }
+}
 
 
 .arrow{
@@ -143,7 +158,8 @@ a {
 
 
 nav {
-	background-color: #506585;
+  background-color: #506585;
+  padding-left: 6em;
 }
 
 nav ul {
@@ -173,7 +189,6 @@ nav a {
 nav a:hover {
   text-decoration: underline;
   text-shadow: 0em 0.3em 0.6em;
-
   cursor: pointer;
 }
 
