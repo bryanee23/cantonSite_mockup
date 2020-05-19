@@ -3,9 +3,9 @@ import Logo from './images/logo.jpg';
 
 export default function Header(props){
   return (
-  <header>
-      <img className="image" src={Logo} alt='weekly ad' />
-      <ul id="location-text" className="text typeface">
+  <header id="header">
+      <img className="image" id="logo" src={Logo} alt='weekly ad' />
+      <ul id="location-text-list" className="text typeface">
         <li>750 S. Alameda Street</li>
         <li>Los Angeles, CA 90021</li>
         <li><strong>Tel:</strong> (213) 688-7707</li>
