@@ -11,8 +11,7 @@ export default function Header(props){
         <li><strong>Tel:</strong> (213) 688-7707</li>
         <li><strong>Fax:</strong> (213) 688-1121</li>
         <li>
-          <strong>Email:</strong>
-          <a href="mailto:Corporate@cantonfoodcocom">
+          <strong>Email:</strong><a href="mailto:Corporate@cantonfoodcocom">
             Corporate@cantonfoodco.com
             </a>
         </li>
