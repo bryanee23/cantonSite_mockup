@@ -2,6 +2,7 @@
 componentsOG/
 distOG/
 originalProj/
+package-lock.json
 
 # Logs
 logs

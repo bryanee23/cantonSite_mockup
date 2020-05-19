@@ -16,7 +16,7 @@ export default class App extends React.Component {
       <div className="main-grid">
         <div className="container">
           <Header />
-          {/* <Nav /> */}
+          <Nav />
           {/* <Carousel /> */}
           {/* <Products /> */}
           {/* <Specials /> */}
