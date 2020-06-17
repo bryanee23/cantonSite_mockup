@@ -56,7 +56,7 @@ $ npm install
 ---
 
 ## Disclamier
-- This project was meant to be a prototype
+- This is a protoype
 <br/>
 
 ---
