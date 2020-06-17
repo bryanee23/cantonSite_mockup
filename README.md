@@ -1,7 +1,5 @@
 # Canton Food Co Website Mockup
 
-<h1 align="center">CantonFoodCo.com Re-Design</h1>
-
 This prototype was completed after a conversation with the owners to show potential updates to new tech outside of wordpress environment.
 <br/>
 
