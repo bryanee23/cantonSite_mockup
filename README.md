@@ -35,12 +35,6 @@ $ npm install
 <img src="/README.gif">
 </h1>
 
-Image requirements of a person to identify:
--	Save 3-4 pictures of an NBA player to be identified into a folder
--	Images should only contain the person to be identified
--	Save folder as “(First name of player) (Last name of player)“, example: "Stephen Curry"
-- Then follow the steps on the screen
-
 - <a href="https://drive.google.com/file/d/1JgoWolhwTmj14pvPp8pcVMSUhzZ6vrGq/view?usp=sharing">Video Sample</a>
 <br/>
 
