@@ -1,12 +1,6 @@
-# CantonFoodCo.com Mockup
+# Canton Food Co Website Mockup
 
-<h1 align="center">
-  <br>
-<img src="/static/readme/logo.png" width="160">
-</h1>
-
-
-<h4 align="center">CantonFoodCo.com Re-Design</h4>
+<h1 align="center">CantonFoodCo.com Re-Design</h1>
 
 This prototype was completed after a conversation with the owners to show potential updates to new tech outside of wordpress environment.
 <br/>
